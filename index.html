@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanCity</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" defer></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>CleanCity</h1>
+        </header>
+        <div id="map"></div>
+        <div id="report-form">
+            <h2>Report a Full Bin</h2>
+            <form id="binForm">
+                <label for="location">Location:</label>
+                <input type="text" id="location" placeholder="Enter bin location" required>
+                
+                <label for="image">Image (optional):</label>
+                <input type="file" id="image">
+                
+                <label for="comments">Comments:</label>
+                <textarea id="comments" placeholder="Add any comments"></textarea>
+                
+                <button type="submit">Submit Report</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
